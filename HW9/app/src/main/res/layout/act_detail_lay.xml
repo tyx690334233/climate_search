@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".act_detail">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="@string/act_tag_today" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbartab"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_collapseMode="pin" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+
+            app:tabBackground="@drawable/tab_selector_ripple"
+
+            android:layout_height="wrap_content"
+            app:tabSelectedTextColor="@color/textColor"
+            app:tabTextColor="@color/summary"
+            android:background="@color/backgroundColor">
+
+            <com.google.android.material.tabs.TabItem
+                android:icon="@drawable/calendar_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:text="@string/act_tag_today"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:icon="@drawable/trending_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/act_tag_weekly"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:icon="@drawable/google_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/act_tag_photos"/>
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/act_tag_today"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

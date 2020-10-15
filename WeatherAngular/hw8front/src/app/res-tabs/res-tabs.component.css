@@ -1,0 +1,20 @@
+.resActive{
+    background-color: #6792AB;
+}
+#switchtab button{
+    border: 1px solid black;
+}
+img{
+    width: 1.4rem; 
+}
+i{
+    width: 1.4rem; 
+}
+
+.notActive{
+    color:black;
+}
+
+a#starlink{
+    height: 2.65rem;
+}

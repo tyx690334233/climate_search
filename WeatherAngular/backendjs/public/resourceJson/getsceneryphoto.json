@@ -1,0 +1,218 @@
+{
+    "kind": "customsearch#search",
+    "url":
+    {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries":
+    {
+        "request": [
+        {
+            "title": "Google Custom Search - Losangeles",
+            "totalResults": "2130000000",
+            "searchTerms": "Losangeles",
+            "count": 8,
+            "startIndex": 1,
+            "inputEncoding": "utf8",
+            "outputEncoding": "utf8",
+            "safe": "off",
+            "cx": "007598455208714255862:yxe0r2cmzga",
+            "searchType": "image",
+            "imgSize": "huge",
+            "imgType": "news"
+        }],
+        "nextPage": [
+        {
+            "title": "Google Custom Search - Losangeles",
+            "totalResults": "2130000000",
+            "searchTerms": "Losangeles",
+            "count": 8,
+            "startIndex": 9,
+            "inputEncoding": "utf8",
+            "outputEncoding": "utf8",
+            "safe": "off",
+            "cx": "007598455208714255862:yxe0r2cmzga",
+            "searchType": "image",
+            "imgSize": "huge",
+            "imgType": "news"
+        }]
+    },
+    "context":
+    {
+        "title": "customPicSearch"
+    },
+    "searchInformation":
+    {
+        "searchTime": 0.271318,
+        "formattedSearchTime": "0.27",
+        "totalResults": "2130000000",
+        "formattedTotalResults": "2,130,000,000"
+    },
+    "spelling":
+    {
+        "correctedQuery": "Los Angeles",
+        "htmlCorrectedQuery": "<b><i>Los Angeles</i></b>"
+    },
+    "items": [
+    {
+        "kind": "customsearch#result",
+        "title": "Los Angeles - Wikipedia",
+        "htmlTitle": "<b>Los Angeles</b> - Wikipedia",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/3/30/Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg",
+        "displayLink": "en.wikipedia.org",
+        "snippet": "Los Angeles - Wikipedia",
+        "htmlSnippet": "<b>Los Angeles</b> - Wikipedia",
+        "mime": "image/jpeg",
+        "image":
+        {
+            "contextLink": "https://en.wikipedia.org/wiki/Los_Angeles",
+            "height": 2164,
+            "width": 3974,
+            "byteSize": 4115190,
+            "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbSO8_3BWEPvCrQRG9A6mxZ0UYDl5vj9683pjTDxMMY3aGCprizfhmaEn2&s",
+            "thumbnailHeight": 82,
+            "thumbnailWidth": 150
+        }
+    },
+    {
+        "kind": "customsearch#result",
+        "title": "How Los Angeles Is Helping Lead the Fight Against Climate Change ...",
+        "htmlTitle": "How <b>Los Angeles</b> Is Helping Lead the Fight Against Climate Change ...",
+        "link": "https://media.wired.com/photos/5b9c01161e60052cdc38bdef/master/pass/losangeles-947698310.jpg",
+        "displayLink": "www.wired.com",
+        "snippet": "How Los Angeles Is Helping Lead the Fight Against Climate Change ...",
+        "htmlSnippet": "How <b>Los Angeles</b> Is Helping Lead the Fight Against Climate Change ...",
+        "mime": "image/jpeg",
+        "image":
+        {
+            "contextLink": "https://www.wired.com/story/how-los-angeles-is-helping-lead-the-fight-against-climate-change/",
+            "height": 1350,
+            "width": 2400,
+            "byteSize": 725004,
+            "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHec-P00lLOYBONIDBQPVmiC80vSc3h63g0BiXYOkRO4rpIFZXVD2m7vXO&s",
+            "thumbnailHeight": 84,
+            "thumbnailWidth": 150
+        }
+    },
+    {
+        "kind": "customsearch#result",
+        "title": "LosAngeles | EDM Identity",
+        "htmlTitle": "<b>LosAngeles</b> | EDM Identity",
+        "link": "https://edmidentity.com/wp-content/uploads/2017/09/LosAngeles.jpg",
+        "displayLink": "edmidentity.com",
+        "snippet": "LosAngeles | EDM Identity",
+        "htmlSnippet": "<b>LosAngeles</b> | EDM Identity",
+        "mime": "image/jpeg",
+        "image":
+        {
+            "contextLink": "https://edmidentity.com/2017/09/01/labor-day-weekend-events-guide-la/losangeles/",
+            "height": 1430,
+            "width": 3000,
+            "byteSize": 553144,
+            "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-BzsPGx1S5CF5BNUl_LV94V3iqL_lqNuxIrPMh65WFXaCAm_j_lttgpF&s",
+            "thumbnailHeight": 72,
+            "thumbnailWidth": 150
+        }
+    },
+    {
+        "kind": "customsearch#result",
+        "title": "Los Angeles County, California - Wikipedia",
+        "htmlTitle": "<b>Los Angeles</b> County, California - Wikipedia",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/8/89/Los_Angeles%2C_Winter_2016.jpg",
+        "displayLink": "en.wikipedia.org",
+        "snippet": "Los Angeles County, California - Wikipedia",
+        "htmlSnippet": "<b>Los Angeles</b> County, California - Wikipedia",
+        "mime": "image/jpeg",
+        "image":
+        {
+            "contextLink": "https://en.wikipedia.org/wiki/Los_Angeles_County,_California",
+            "height": 2552,
+            "width": 4096,
+            "byteSize": 4785735,
+            "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxmnH6Gh9oyP00YiabhLkYUx_iGcAqQFIBB_MuKSLFXKXIdddSJiORPUU&s",
+            "thumbnailHeight": 93,
+            "thumbnailWidth": 150
+        }
+    },
+    {
+        "kind": "customsearch#result",
+        "title": "Climate Smart Cities Los Angeles - Planning and GIS",
+        "htmlTitle": "Climate Smart Cities <b>Los Angeles</b> - Planning and GIS",
+        "link": "https://web.tplgis.org/wp-content/uploads/2018/01/Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg",
+        "displayLink": "web.tplgis.org",
+        "snippet": "Climate Smart Cities Los Angeles - Planning and GIS",
+        "htmlSnippet": "Climate Smart Cities <b>Los Angeles</b> - Planning and GIS",
+        "mime": "image/jpeg",
+        "image":
+        {
+            "contextLink": "https://web.tplgis.org/csc_losangeles/",
+            "height": 2242,
+            "width": 3992,
+            "byteSize": 845372,
+            "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI9eK6gmLvie6AbLKg5A_7-r509eQiYN5u4wESL0f0-tuprhKM6Yeodzs&s",
+            "thumbnailHeight": 84,
+            "thumbnailWidth": 150
+        }
+    },
+    {
+        "kind": "customsearch#result",
+        "title": "Bus Tickets to Los Angeles | Find the Cheapest Buses - Busbud",
+        "htmlTitle": "Bus Tickets to <b>Los Angeles</b> | Find the Cheapest Buses - Busbud",
+        "link": "https://busbud.imgix.net/city-hires/1474307214285-LosAngeles,California,UnitedStates.jpg?h={height}&w={width}&auto=format,compress",
+        "displayLink": "www.busbud.com",
+        "snippet": "Bus Tickets to Los Angeles | Find the Cheapest Buses - Busbud",
+        "htmlSnippet": "Bus Tickets to <b>Los Angeles</b> | Find the Cheapest Buses - Busbud",
+        "mime": "image/jpeg",
+        "image":
+        {
+            "contextLink": "https://www.busbud.com/en/bus-los-angeles/c/9q5ctr",
+            "height": 2461,
+            "width": 3700,
+            "byteSize": 790132,
+            "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVls1Cg5xTH9KVBElbwbyb7T5eiV9pB4Wlpg8nnSOFQlLq1vDOsvg6Jl0&s",
+            "thumbnailHeight": 100,
+            "thumbnailWidth": 150
+        }
+    },
+    {
+        "kind": "customsearch#result",
+        "title": "Earthquake Warning App ShakeAlertLA Debuts in Los Angeles | WIRED",
+        "htmlTitle": "Earthquake Warning App ShakeAlertLA Debuts in <b>Los Angeles</b> | WIRED",
+        "link": "https://media.wired.com/photos/5c3551bf7900010b1acb5448/master/pass/losangeles-934053386.jpg",
+        "displayLink": "www.wired.com",
+        "snippet": "Earthquake Warning App ShakeAlertLA Debuts in Los Angeles | WIRED",
+        "htmlSnippet": "Earthquake Warning App ShakeAlertLA Debuts in <b>Los Angeles</b> | WIRED",
+        "mime": "image/jpeg",
+        "image":
+        {
+            "contextLink": "https://www.wired.com/story/los-angeles-gets-americas-first-earthquake-warning-app/",
+            "height": 1600,
+            "width": 2400,
+            "byteSize": 1226774,
+            "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_jK82AATWWphtsLyZlb17fZA062iFml8AQW-f6aWWD12Q8NX8_rhIWCc&s",
+            "thumbnailHeight": 100,
+            "thumbnailWidth": 150
+        }
+    },
+    {
+        "kind": "customsearch#result",
+        "title": "1-losangeles - Intelligent Living",
+        "htmlTitle": "1-<b>losangeles</b> - Intelligent Living",
+        "link": "https://www.intelligentliving.co/wp-content/uploads/2019/11/1-losangeles.jpg",
+        "displayLink": "www.intelligentliving.co",
+        "snippet": "1-losangeles - Intelligent Living",
+        "htmlSnippet": "1-<b>losangeles</b> - Intelligent Living",
+        "mime": "image/jpeg",
+        "image":
+        {
+            "contextLink": "https://www.intelligentliving.co/new-satellite-measurements-reveal-how-polluted-los-angeles-air-really-is/1-losangeles/",
+            "height": 1279,
+            "width": 1920,
+            "byteSize": 681934,
+            "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZLq7MqeFey4H1KBSY6FZkxW_jwiuSXTsC-IzisOk8pBtOdG0ivNeU7cGC&s",
+            "thumbnailHeight": 100,
+            "thumbnailWidth": 150
+        }
+    }]
+}

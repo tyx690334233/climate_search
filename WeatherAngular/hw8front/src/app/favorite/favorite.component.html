@@ -1,0 +1,38 @@
+<div class="mt-4">
+    <div *ngIf="isShow">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">City</th>
+                    <th scope="col">State</th>
+                    <th scope="col">WishList</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of CityArray; let i = index" class="oddrow">
+                    <th scope="row">{{i+1}}</th>
+                    <td><img [src]="item.sealUrl"></td>
+                    <td><a data-toggle="tooltip" onMouseOver="$(this).tooltip('show')" data-placement="bottom" [title]="item.cityname" routerLink="/currenttab" (click)="showres(i)">{{item.cityname}}</a></td>
+                    <td>{{item.statename}}</td>
+                    <td>
+                        <div id="deletediv">
+                            <button (click)="deleteFav(i)">
+                                <i class="material-icons">
+                                    delete
+                                </i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="!isShow">
+        <div id="norecodes">
+            No Records
+        </div>
+    </div>
+
+</div>

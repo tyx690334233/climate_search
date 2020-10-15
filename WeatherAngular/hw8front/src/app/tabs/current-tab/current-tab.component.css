@@ -1,0 +1,56 @@
+#currentWeatherCard{
+    background-color: rgb(156, 209, 240);
+    border: 1px solid black;
+    max-width: 1200px;
+    padding: 1rem 1rem 0 1rem;
+    width:  40rem;
+    border-radius: 0.5rem;
+}
+table{
+    text-align: center;
+}
+#rightpart img{
+    width: 8rem;
+}
+.pictureblock img{
+   width: 60%;
+}
+/* .pictureblock div{
+    align:center;
+} */
+.datablock{
+    width: 10%;
+    text-align: center;
+    
+}
+.datablock span{
+    width: 5rem;
+}
+#city{
+    font-size: 2rem;
+}
+#timezone{
+    font-size: 1.7rem;
+}
+#tem{
+    font-size: 2rem;
+}
+#tem img{
+    width:1rem; 
+    vertical-align:top;
+}
+@media only screen and (max-width: 640px) {
+    #city{
+        font-size: 1.7rem;
+    }
+    #timezone{
+        font-size: 1.4rem;
+    }
+    #tem{
+        font-size: 1.5rem;
+    }
+    #tem img{
+        width:0.7rem; 
+        vertical-align:top;
+    }
+}

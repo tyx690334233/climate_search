@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/windspeedcard"
+        android:layout_width="@dimen/today_cards_width"
+        android:layout_height="@dimen/today_cards_height"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pressurecard"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pressurecard">
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="@dimen/today_cards_img_width"
+            android:layout_height="@dimen/today_cards_img_width"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/wind_card_weather_windy" />
+
+        <TextView
+            android:id="@+id/windspeedcardvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/colorPrimaryFont"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="105dp"
+            android:text="Wind Speed"
+            android:textColor="@color/summary_font_color"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pressurecard"
+        android:layout_width="@dimen/today_cards_width"
+        android:layout_height="@dimen/today_cards_height"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/precipitationcard"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/precipitationcard">
+
+        <ImageView
+            android:id="@+id/imageview2"
+            android:layout_width="@dimen/today_cards_img_width"
+            android:layout_height="@dimen/today_cards_img_width"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/pressure_card_gauge" />
+
+        <TextView
+            android:id="@+id/pressurecardvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/colorPrimaryFont"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="105dp"
+            android:text="Pressure"
+            android:textColor="@color/summary_font_color"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/precipitationcard"
+        android:layout_width="@dimen/today_cards_width"
+        android:layout_height="@dimen/today_cards_height"
+        android:layout_marginTop="24dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageview3"
+            android:layout_width="@dimen/today_cards_img_width"
+            android:layout_height="@dimen/today_cards_img_width"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/rain_card_weather_pouring" />
+
+        <TextView
+            android:id="@+id/precipitationcardvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/colorPrimaryFont"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="105dp"
+            android:text="Precipitation"
+            android:textColor="@color/summary_font_color"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tempraturecard"
+        android:layout_width="@dimen/today_cards_width"
+        android:layout_height="@dimen/today_cards_height"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/todaycard"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/todaycard">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/today_cards_img_width"
+            android:layout_height="@dimen/today_cards_img_width"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/temperature_card_thermometer" />
+
+        <TextView
+            android:id="@+id/tempraturecardvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/colorPrimaryFont"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="105dp"
+            android:text="Temprature"
+            android:textColor="@color/summary_font_color"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/todaycard"
+        android:layout_width="@dimen/today_cards_width"
+        android:layout_height="@dimen/today_cards_height"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/humiditycard"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/humiditycard">
+
+        <ImageView
+            android:id="@+id/todayimage"
+            android:layout_width="@dimen/today_card_img_width"
+            android:layout_height="@dimen/today_card_img_width"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/todaycardvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="105dp"
+            android:textColor="@color/summary_font_color"
+            android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/humiditycard"
+        android:layout_width="@dimen/today_cards_width"
+        android:layout_height="@dimen/today_cards_height"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/precipitationcard">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/today_cards_img_width"
+            android:layout_height="@dimen/today_cards_img_width"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/humidity_card_water_percent" />
+
+        <TextView
+            android:id="@+id/humiditycardvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/colorPrimaryFont"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="105dp"
+            android:text="Humidity"
+            android:textColor="@color/summary_font_color"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/visibilitycard"
+        android:layout_width="@dimen/today_cards_width"
+        android:layout_height="@dimen/today_cards_height"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cloudcovercard"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cloudcovercard">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="@dimen/today_cards_img_width"
+            android:layout_height="@dimen/today_cards_img_width"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/visibility_card_eye_outline" />
+
+        <TextView
+            android:id="@+id/visibilitycardvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/colorPrimaryFont"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="105dp"
+            android:text="Visibility"
+            android:textColor="@color/summary_font_color"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cloudcovercard"
+        android:layout_width="@dimen/today_cards_width"
+        android:layout_height="@dimen/today_cards_height"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ozonecard"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/ozonecard">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="@dimen/today_cards_img_width"
+            android:layout_height="@dimen/today_cards_img_width"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/cloud_cover_card_weather_fog" />
+
+        <TextView
+            android:id="@+id/cloudcovercardvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/colorPrimaryFont"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="105dp"
+            android:text="Cloud Cover"
+            android:textColor="@color/summary_font_color"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ozonecard"
+        android:layout_width="@dimen/today_cards_width"
+        android:layout_height="@dimen/today_cards_height"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/humiditycard">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="@dimen/today_cards_img_width"
+            android:layout_height="@dimen/today_cards_img_width"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ozone_card_earth" />
+
+        <TextView
+            android:id="@+id/ozonecardvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/colorPrimaryFont"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="105dp"
+            android:text="Ozone"
+            android:textColor="@color/summary_font_color"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33333" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.666" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

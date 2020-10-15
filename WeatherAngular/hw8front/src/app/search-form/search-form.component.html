@@ -1,0 +1,75 @@
+<div class="container weatherform pb-3">
+    <div class="row">
+        <div class="col-12 col-md-8 offset-md-2" id="formheader">
+            Weather Search
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form [formGroup]="weatherform">
+                <div class=" form-group row">
+                    <label class="offset-md-2 col-md-2 col-form-label" for="streetname">Street<span>*</span></label>
+                    <input type="text" class="form-control offset-md-0  col-md-6 offset-1 col-10" id="streetname" placeholder="Enter Street Name"
+                        formControlName="street" required [(ngModel)]="search.streetname" appValidation>
+                    <div *ngIf="(streetname.invalid)&& (streetname.dirty || streetname.touched)"
+                        class="errormsg offset-md-4">
+                        <div *ngIf="streetname.errors.required ||streetname.errors.invalidUrl">
+                            Please enter a street.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="offset-md-2 col-md-2 col-form-label" for="cityname">City<span>*</span></label>
+                    <input type="text" class="form-control offset-md-0 col-md-6 offset-1 col-10" id="cityname" placeholder="Enter City Name" matInput
+                        formControlName="city" [(ngModel)]="search.cityname" [matAutocomplete]="auto" appValidation>
+                    <mat-autocomplete #auto="matAutocomplete">
+                        <mat-option *ngFor="let option of adviseOption | async" [value]="option">
+                            {{option}}
+                        </mat-option>
+                    </mat-autocomplete>
+                    <div *ngIf="cityname.invalid && (cityname.dirty || cityname.touched)" class="errormsg offset-md-4">
+                        <div *ngIf="cityname.errors.required ||cityname.errors.invalidUrl">
+                            Please enter a city.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="offset-md-2 col-md-2 col-form-label" for="stateSelect">State<span>*</span></label>
+                    <select class="form-control offset-md-0 col-md-4 offset-1 col-10" id="stateSelect" name="stateSelect"
+                        [(ngModel)]="search.statename" formControlName="state">
+                        <option>Select State</option>
+                        <option *ngFor="let state of stateList" [value]="state.abbreviation">{{state.name}}</option>
+                    </select>
+                </div>
+                <!-- currentlocation -->
+                <div class="form-group row">
+                    <div class="form-check offset-md-2 offset-1">
+                        <input class="form-check-input" type="checkbox" value="" id="curLocCheck" (click)="useCurLoc()">
+                        <label class="form-check-label" for="curLocCheck">
+                            Current Location
+                        </label>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="form-group row">
+                    <!-- search button -->
+                    <div class="col-md-2 offset-md-2 col-4">
+                        <button type="submit" class="btn btn-light" (click)="submitSearchForm()"  routerLink="/currenttab"
+                            [disabled]="!isFillNeededInfo() && !search.isCurLocChoose.checked">
+                            <i class="material-icons">search</i>
+                            Search
+                        </button>
+                    </div>
+                    <!-- clear button -->
+                    <div class="col-md-2 col-4">
+                        <button type="reset" class="btn btn-light" id="clearall" (click)="clearAll()">
+                            <i class="material-icons">clear_all</i>
+                            Clear
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

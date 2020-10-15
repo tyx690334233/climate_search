@@ -1,0 +1,24 @@
+<!-- result and fav button -->
+<div class="container-fluid ">
+    <div id="switchtab" class="mt-5">
+        <div class="row">
+            <!-- results button -->
+            <div class="col-md-2 offset-md-4 offset-3 col-3">
+                <button type="button" [class]="resShowClass" (click)="showRes()" id="results">
+                    Results
+                </button>
+            </div>
+            <!-- fav button -->
+            <div class="col-md-2 col-3">
+                <button type="button" [class]="favShowClass" (click)="showFav()" id="fav">
+                    Favorites
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- progree bar -->
+    <app-progress-bar></app-progress-bar>
+    <app-res-tabs [hidden]="!getShow()"></app-res-tabs>
+    <app-favorite [hidden]="!isShowFav"></app-favorite>
+
+</div>

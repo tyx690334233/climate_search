@@ -1,0 +1,179 @@
+{
+    "predictions": [
+    {
+        "description": "Los Angeles, CA, USA",
+        "id": "7f7b7d8118ae8db8ed3f541159ac928c484d12ad",
+        "matched_substrings": [
+        {
+            "length": 3,
+            "offset": 0
+        }],
+        "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+        "reference": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+        "structured_formatting":
+        {
+            "main_text": "Los Angeles",
+            "main_text_matched_substrings": [
+            {
+                "length": 3,
+                "offset": 0
+            }],
+            "secondary_text": "CA, USA"
+        },
+        "terms": [
+        {
+            "offset": 0,
+            "value": "Los Angeles"
+        },
+        {
+            "offset": 13,
+            "value": "CA"
+        },
+        {
+            "offset": 17,
+            "value": "USA"
+        }],
+        "types": ["locality", "political", "geocode"]
+    },
+    {
+        "description": "Los Alamitos, CA, USA",
+        "id": "39a8a6f1052d0c6568cd44f26e4c2058b1e128e3",
+        "matched_substrings": [
+        {
+            "length": 3,
+            "offset": 0
+        }],
+        "place_id": "ChIJJQtQH_Eu3YAR--qhgEZhhdQ",
+        "reference": "ChIJJQtQH_Eu3YAR--qhgEZhhdQ",
+        "structured_formatting":
+        {
+            "main_text": "Los Alamitos",
+            "main_text_matched_substrings": [
+            {
+                "length": 3,
+                "offset": 0
+            }],
+            "secondary_text": "CA, USA"
+        },
+        "terms": [
+        {
+            "offset": 0,
+            "value": "Los Alamitos"
+        },
+        {
+            "offset": 14,
+            "value": "CA"
+        },
+        {
+            "offset": 18,
+            "value": "USA"
+        }],
+        "types": ["locality", "political", "geocode"]
+    },
+    {
+        "description": "Los Gatos, CA, USA",
+        "id": "7ec5fdc9482acde2a2110c3966ed82946f3f5e91",
+        "matched_substrings": [
+        {
+            "length": 3,
+            "offset": 0
+        }],
+        "place_id": "ChIJPwN3UzY0joARpox0rAFTZ-8",
+        "reference": "ChIJPwN3UzY0joARpox0rAFTZ-8",
+        "structured_formatting":
+        {
+            "main_text": "Los Gatos",
+            "main_text_matched_substrings": [
+            {
+                "length": 3,
+                "offset": 0
+            }],
+            "secondary_text": "CA, USA"
+        },
+        "terms": [
+        {
+            "offset": 0,
+            "value": "Los Gatos"
+        },
+        {
+            "offset": 11,
+            "value": "CA"
+        },
+        {
+            "offset": 15,
+            "value": "USA"
+        }],
+        "types": ["locality", "political", "geocode"]
+    },
+    {
+        "description": "Los Olivos, CA, USA",
+        "id": "b8122d79fe72a20826779609131227cf6dd61eb7",
+        "matched_substrings": [
+        {
+            "length": 3,
+            "offset": 0
+        }],
+        "place_id": "ChIJg5xJBnpV6YARG_SRJXRb-yw",
+        "reference": "ChIJg5xJBnpV6YARG_SRJXRb-yw",
+        "structured_formatting":
+        {
+            "main_text": "Los Olivos",
+            "main_text_matched_substrings": [
+            {
+                "length": 3,
+                "offset": 0
+            }],
+            "secondary_text": "CA, USA"
+        },
+        "terms": [
+        {
+            "offset": 0,
+            "value": "Los Olivos"
+        },
+        {
+            "offset": 12,
+            "value": "CA"
+        },
+        {
+            "offset": 16,
+            "value": "USA"
+        }],
+        "types": ["locality", "political", "geocode"]
+    },
+    {
+        "description": "Los Banos, CA, USA",
+        "id": "d5bcea1ecbb4aa79baa502f0ffefe1798a60bf0b",
+        "matched_substrings": [
+        {
+            "length": 3,
+            "offset": 0
+        }],
+        "place_id": "ChIJa-jV7OR-kYAR4jLdmWXZOHQ",
+        "reference": "ChIJa-jV7OR-kYAR4jLdmWXZOHQ",
+        "structured_formatting":
+        {
+            "main_text": "Los Banos",
+            "main_text_matched_substrings": [
+            {
+                "length": 3,
+                "offset": 0
+            }],
+            "secondary_text": "CA, USA"
+        },
+        "terms": [
+        {
+            "offset": 0,
+            "value": "Los Banos"
+        },
+        {
+            "offset": 11,
+            "value": "CA"
+        },
+        {
+            "offset": 15,
+            "value": "USA"
+        }],
+        "types": ["locality", "political", "geocode"]
+    }],
+    "status": "OK"
+}

@@ -1,0 +1,32 @@
+<!-- result and fav button -->
+<div class="container">
+    <div class="row">
+        <ul class="nav nav-tabs col-md-12">
+            <li class="nav-item">
+                <a [class]="tabs[0]" routerLink="/currenttab" (click)="setActive($event)">Current</a>
+            </li>
+            <li class="nav-item">
+                <a [class]="tabs[1]" routerLink="/hourlytab" (click)="setActive($event)">Hourly</a>
+            </li>
+            <li class="nav-item">
+                <a [class]="tabs[2]" routerLink="/weeklytab" (click)="setActive($event)">Weekly</a>
+            </li>
+            <li class="nav-item offset-md-7 offset-1">
+                <a class="nav-link twitter-share-button" target="_blank" [href]="tweetContent"><img
+                        src="https://img.icons8.com/color/48/000000/twitter.png"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="toggleFav()" id="starlink">
+                    <i class="material-icons" [style.color]="style ? 'rgb(253, 211, 69)' : 'black'">
+                        {{starpic}}
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="offset-md-1 col-md-10 mt-3">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

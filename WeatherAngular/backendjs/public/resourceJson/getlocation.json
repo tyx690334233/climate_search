@@ -1,0 +1,85 @@
+{
+    "results": [
+    {
+        "address_components": [
+        {
+            "long_name": "1246",
+            "short_name": "1246",
+            "types": ["street_number"]
+        },
+        {
+            "long_name": "West 30th Street",
+            "short_name": "W 30th St",
+            "types": ["route"]
+        },
+        {
+            "long_name": "South Los Angeles",
+            "short_name": "South Los Angeles",
+            "types": ["neighborhood", "political"]
+        },
+        {
+            "long_name": "Los Angeles",
+            "short_name": "Los Angeles",
+            "types": ["locality", "political"]
+        },
+        {
+            "long_name": "Los Angeles County",
+            "short_name": "Los Angeles County",
+            "types": ["administrative_area_level_2", "political"]
+        },
+        {
+            "long_name": "California",
+            "short_name": "CA",
+            "types": ["administrative_area_level_1", "political"]
+        },
+        {
+            "long_name": "United States",
+            "short_name": "US",
+            "types": ["country", "political"]
+        },
+        {
+            "long_name": "90007",
+            "short_name": "90007",
+            "types": ["postal_code"]
+        }],
+        "formatted_address": "1246 W 30th St, Los Angeles, CA 90007, USA",
+        "geometry":
+        {
+            "bounds":
+            {
+                "northeast":
+                {
+                    "lat": 34.0273061,
+                    "lng": -118.2901178
+                },
+                "southwest":
+                {
+                    "lat": 34.02699,
+                    "lng": -118.2908712
+                }
+            },
+            "location":
+            {
+                "lat": 34.0271489,
+                "lng": -118.2907574
+            },
+            "location_type": "ROOFTOP",
+            "viewport":
+            {
+                "northeast":
+                {
+                    "lat": 34.0284970302915,
+                    "lng": -118.2891455197085
+                },
+                "southwest":
+                {
+                    "lat": 34.0257990697085,
+                    "lng": -118.2918434802915
+                }
+            }
+        },
+        "place_id": "ChIJeX0sWfDHwoAR_sL2WPjKPdE",
+        "types": ["premise"]
+    }],
+    "status": "OK"
+}

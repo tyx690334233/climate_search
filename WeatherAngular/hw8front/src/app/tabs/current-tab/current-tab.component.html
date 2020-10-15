@@ -1,0 +1,75 @@
+<div class="container col-md-8 offset-md-2">
+    <div class="row">
+        <div [hidden]="!isShowData" class=" mt-3" id="currentWeatherCard">
+            <div class="row upperrow">
+                <div id="leftpart" class="col-7 col-sm-7">
+                    <div id="city">{{city}}</div>
+                    <div id="timezone">{{current.timezone}}</div>
+                    <div id="tem">{{current.curTem}}<img
+                            src="https://cdn3.iconfinder.com/data/icons/virtual-notebook/16/button_shape_oval-512.png">F
+                    </div>
+                    <div>{{current.summary}}</div>
+                </div>
+                <div id="rightpart" class="col-4 col-sm-4">
+                    <img [src]="current.imgsrc" alt="state seal">
+                </div>
+            </div>
+            <div class="lowerrow mt-3">
+                <table class="table table-borderless">
+                    <tr>
+                        <div class="row">
+                            <td class="pictureblock col-2" *ngIf="isAvailable(iconPic[0].key)">
+                                <img [src]="iconPic[0].value" onMouseOver="$(this).tooltip('show')" data-toggle="tooltip" data-placement="top"
+                                    title="humidity">
+                            </td>
+                            <td class="pictureblock col-2" *ngIf="isAvailable(iconPic[1].key)">
+                                <img [src]="iconPic[1].value" onMouseOver="$(this).tooltip('show')" data-toggle="tooltip" data-placement="top"
+                                    title="pressure">
+                            </td>
+                            <td class="pictureblock col-2" *ngIf="isAvailable(iconPic[2].key)">
+                                <img [src]="iconPic[2].value" onMouseOver="$(this).tooltip('show')" data-toggle="tooltip" data-placement="top"
+                                    title="windspeed">
+                            </td>
+                            <td class="pictureblock col-2" *ngIf="isAvailable(iconPic[3].key)">
+                                <img [src]="iconPic[3].value" onMouseOver="$(this).tooltip('show')" data-toggle="tooltip" data-placement="top"
+                                    title="visibility">
+                            </td>
+                            <td class="pictureblock col-2" *ngIf="isAvailable(iconPic[4].key)">
+                                <img [src]="iconPic[4].value" onMouseOver="$(this).tooltip('show')" data-toggle="tooltip" data-placement="top"
+                                    title="cloudcover">
+                            </td>
+                            <td class="pictureblock col-2" *ngIf="isAvailable(iconPic[5].key)">
+                                <img [src]="iconPic[5].value" onMouseOver="$(this).tooltip('show')" data-toggle="tooltip" data-placement="top" title="ozone">
+                            </td>
+                        </div>
+
+                    </tr>
+                    <tr>
+                        <div class="row">
+                            <td class="datablock col-2" *ngIf="isAvailable(iconPic[0].key)">
+                                <span>{{current.humidity}}</span>
+                            </td>
+                            <td class="datablock col-2" *ngIf="isAvailable(iconPic[1].key)">
+                                <span>{{current.pressure}}</span>
+                            </td>
+                            <td class="datablock col-2" *ngIf="isAvailable(iconPic[2].key)">
+                                <span>{{current.windspeed}}</span>
+                            </td>
+                            <td class="datablock col-2" *ngIf="isAvailable(iconPic[3].key)">
+                                <span> {{current.visibility}}</span>
+                            </td>
+                            <td class="datablock col-2" *ngIf="isAvailable(iconPic[4].key)">
+                                <span>{{current.cloudcover}}</span>
+                            </td>
+                            <td class="datablock col-2" *ngIf="isAvailable(iconPic[5].key)">
+                                <span>{{current.ozone}}</span>
+                            </td>
+                        </div>
+
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
